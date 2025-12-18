@@ -1,7 +1,7 @@
-# trindadeErudita
-A Trindade Erudita - Os três pilares da música ocidental
+# classicalCore
+Classical Core - Os três mestres da música ocidental
 
-A Trindade Erudita é um projeto front-end conceitual que apresenta Bach, Mozart e Beethoven como os três pilares fundamentais da música erudita ocidental.
+Classical Core é um projeto front-end conceitual que apresenta Bach, Mozart e Beethoven como os três pilares fundamentais da música erudita ocidental.
 O site explora informação histórica, identidade visual, experiência do usuário e storytelling, associando cada compositor ao seu respectivo período e papel estrutural na música clássica ocidental.
 
 
