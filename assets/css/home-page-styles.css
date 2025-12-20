@@ -1,0 +1,160 @@
+@import url('/assets/css/reset.css');
+@import url('/assets/css/global.css');
+
+body{
+    background-color: var(--preto-base);
+}
+
+body::before{
+    content: "";
+    background-image: url(/assets/images/background-homePage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.2;
+    transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.cc-menu{
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.cc-menu__item{
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 1.25rem;
+}
+
+.cc-menu__icon{
+    width: 1.5rem;
+    margin: 0 1.25rem;
+    vertical-align: middle;
+}
+
+.cc-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cc-card{
+    border: 1px solid var(--barroco-dourado);
+    width: calc(100% / 3 - 8%);
+    height: 70vh;
+    position: relative;
+    transition: filter .5s ease-in-out;
+}
+
+.cc-card__background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.cc-card__image{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    transition: 1s ease-in-out;
+}
+
+.cc-card__title{
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transition: bottom 1s ease-in-out;
+}
+
+.cc-controller{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+
+}
+
+.cc-controller__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: var(--romantico-vermelho);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cc-controller__button:hover{
+    transform: scale(1.1);
+}
+
+.cc-controller__button:nth-child(2){
+    margin: 0 3.75rem;
+}
+
+.cc-controller__line{
+    background-color: white;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+}
+
+
+.cc-card--hovered .cc-card__background{
+    cursor: pointer;
+    opacity: 0;
+}
+
+
+
+.cc-card--hovered .cc-card__image{
+    transform: scale(1.1);
+    filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, .5));
+}
+
+body#compositor-bach-hovered::before{
+    background-image: url(/assets/images/Bach.jpg);
+    
+}
+
+body#compositor-mozart-hovered::before{
+    background-image: url(/assets/images/Mozart.jpg);
+}
+
+body#compositor-beethoven-hovered::before{
+    background-image: url(/assets/images/Beethoven.jpg);
+}
+
+body[id^="compositor-"]::before{
+    opacity: 1;
+}
+
+body[id^="compositor-"] .cc-card:not(.cc-card--hovered){
+    filter: grayscale(100%);
+}
+
+.cc-card--hovered .cc-card__title{
+    bottom: 50%;
+
+}
