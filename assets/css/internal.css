@@ -1,0 +1,69 @@
+@import url('reset.css');
+@import url('global.css');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('/assets/css/components/_navigator.css');
+@import url('/assets/css/components/_pills.css');
+
+.cc-wrapper{
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+}
+
+.cc-wrapper .cc-left-column{
+    width: 120px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding-right: 50px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.cc-wrapper .cc-main-content{
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    padding-left: 130px;
+}
+
+.cc-wrapper .cc-main-content__top{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cc-wrapper .cc-main-content__bottom{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.cc-wrapper .cc-main-content .cc-logo img{
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 30px;
+    width: 25rem;
+}
+
+.cc-wrapper .cc-main-content__top .cc-description{
+    background-color: rgba(0, 0, 0, .7);
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cc-wrapper .cc-main-content__top .cc-description .cc-description__text p{
+    color: white;
+    line-height: 170%;
+}
+
+.cc-wrapper .cc-main-content__top .cc-description .pills{
+    margin-bottom: 20px;
+}
