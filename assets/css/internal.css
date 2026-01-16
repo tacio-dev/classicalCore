@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('/assets/css/components/_navigator.css');
 @import url('/assets/css/components/_pills.css');
+@import url('/assets/css/components/_link-button.css');
+@import url('/assets/css/components/_gallery.css');
 
 .cc-wrapper{
     display: flex;
@@ -48,7 +50,7 @@
 .cc-wrapper .cc-main-content .cc-logo img{
     margin-top: 50px;
     margin-left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     width: 25rem;
 }
 
@@ -60,10 +62,105 @@
 }
 
 .cc-wrapper .cc-main-content__top .cc-description .cc-description__text p{
-    color: white;
+    color: var(--branco-base);
     line-height: 170%;
 }
 
 .cc-wrapper .cc-main-content__top .cc-description .pills{
     margin-bottom: 20px;
 }
+
+.cc-wrapper .cc-main-content .cc-links{
+    padding: 20px;
+    padding-left: 0;
+}
+
+.cc-wrapper .cc-main-content .cc-links ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.cc-bachBackground{
+    background-image: url('/assets/images/backgroundBach.png');
+    background-size: cover;
+}
+
+.cc-beethovenBackground{
+    background-image: url('/assets/images/backgroundBeethoven.png');
+    background-size: cover;
+}
+
+.cc-mozartBackground{
+    background-image: url('/assets/images/backgroundMozart.png');
+    background-size: cover;
+}
+
+.workPlayer {
+  display: grid;
+  width: 935px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 25px;
+  margin-bottom: 5rem;
+}
+
+.workPlayer ul{
+  display: flex; 
+  
+  flex-direction: column; 
+  padding: 1rem 1.25rem; 
+  border-radius: 14px;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+  max-width: 100%; 
+  box-sizing: border-box; 
+}
+
+.bachPlayer{
+    background-color: var(--barroco-marrom);
+}
+
+.bachPlayer ul li,
+.bachPlayer h6,
+.bachPlayer a,
+.bachPlayer p {
+    color: var(--branco-base);
+}
+
+
+
+.beeethovenPlayer{
+    background: var(--barroco-marrom);
+}
+
+.mozartPlayer{
+    background: var(--classico-pessego);
+    
+}
+
+.mozartPlayer ul li,
+.mozartPlayer h6,
+.mozartPlayer a,
+.mozartPlayer p {
+    color: var(--preto-base);
+}
+
+
+.workPlayer h6{
+    font-size: 0.90rem;
+}
+
+.workPlayer audio{
+    width: 100%;
+    height: 42px;
+
+    border-radius: 8px;
+    outline: none;
+
+}
+
+.workPlayer p.audio-license, a{
+    font-size: 12px;
+}
+

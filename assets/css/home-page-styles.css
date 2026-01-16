@@ -26,13 +26,28 @@ body::before{
     font-size: 30px;
     padding-top: 10px;
     margin-bottom: 10px;
-    color:#c91d1d;
+    color:var(--branco-base);
     text-shadow:
     2px 2px 0 var(--preto-base),
     2px 2px 0 var(--preto-base),
     2px 2px 0 var(--preto-base),
     2px 2px 0 var(--preto-base);
 
+}
+
+.subtituloIndex{
+    font-family: 'Libre Baskerville', sans-serif;
+    text-align: center;
+    position: relative;
+    font-size: 22px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    color:var(--branco-base);
+    text-shadow:
+    2px 2px 0 var(--preto-base),
+    2px 2px 0 var(--preto-base),
+    2px 2px 0 var(--preto-base),
+    2px 2px 0 var(--preto-base);
 }
 
 .cc-menu{
@@ -67,7 +82,7 @@ body::before{
     height: 70vh;
     position: relative;
     transition: filter .5s ease-in-out;
-    border: 1.5mm ridge rgba(221, 163, 56, 0.774);
+    border: 1.75mm ridge var(--dourado-base);
 }
 
 .cc-card__background{
@@ -91,6 +106,7 @@ body::before{
 .cc-card__title{
     font-size: 2rem;
     font-family: 'Libre Baskerville', sans-serif;
+    color: var(--branco-base);
     text-align: center;
     position: absolute;
     width: 100%;
@@ -102,47 +118,6 @@ body::before{
     2px -2px 0 var(--preto-base),
     -2px 2px 0 var(--preto-base),
     2px 2px 0 var(--preto-base);
-}
-
-.cc-controller{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-
-}
-
-.cc-controller__button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    border: 2px solid white;
-    border-radius: 50%;
-    background-color: var(--romantico-vermelho);
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 1;
-    transition: transform 0.3s ease-in-out;
-}
-
-.cc-controller__button:hover{
-    transform: scale(1.1);
-}
-
-.cc-controller__button:nth-child(2){
-    margin: 0 3.75rem;
-}
-
-.cc-controller__line{
-    background-color: white;
-    width: 50%;
-    height: 2px;
-    position: absolute;
 }
 
 
