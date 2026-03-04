@@ -131,8 +131,15 @@
 
 
 
-.beeethovenPlayer{
-    background: var(--barroco-marrom);
+.beethovenPlayer{
+    background: var(--romantico-azul);
+}
+
+.beethovenPlayer ul li,
+.beethovenPlayer h6,
+.beethovenPlayer a,
+.beethovenPlayer p {
+    color: var(--branco-base);
 }
 
 .mozartPlayer{
@@ -165,3 +172,14 @@
     font-size: 12px;
 }
 
+.link-compositor{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--dourado-base);
+}
+
+hr {
+  border: none; 
+  height: 1.5px;
+  background-color: var(--branco-base)
+}
