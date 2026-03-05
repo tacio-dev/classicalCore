@@ -8,7 +8,7 @@ body{
 
 body::before{
     content: "";
-    background-image: url(assets/images/background-homePage.jpg);
+    background-image: url(../images/background-homePage.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
