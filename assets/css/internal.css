@@ -82,17 +82,17 @@
 }
 
 .cc-bachBackground{
-    background-image: url('../../assets/images/backgroundBach.png');
+    background-image: url('../images/backgroundBach.png');
     background-size: cover;
 }
 
 .cc-beethovenBackground{
-    background-image: url('../../assets/images/backgroundBeethoven.png');
+    background-image: url('../images/backgroundBeethoven.png');
     background-size: cover;
 }
 
 .cc-mozartBackground{
-    background-image: url('../../assets/images/backgroundMozart.png');
+    background-image: url('../images/backgroundMozart.png');
     background-size: cover;
 }
 
