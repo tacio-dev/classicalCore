@@ -134,17 +134,17 @@ body::before{
 }
 
 body#compositor-bach-hovered::before{
-    background-image: url(assets/images/BachBack.jpg);
+    background-image: url(../images/BachBack.jpg);
     filter: blur(3px);
 }
 
 body#compositor-mozart-hovered::before{
-    background-image: url(assets/images/MozartBack.jpg);
+    background-image: url(../images/MozartBack.jpg);
     filter: blur(3px);
 }
 
 body#compositor-beethoven-hovered::before{
-    background-image: url(assets/images/BeethovenBack.jpg);
+    background-image: url(../images/BeethovenBack.jpg);
     filter: blur(3px);
 }
 
